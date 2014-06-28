@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @place_information.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @place_information.description %>
+</p>
+
+<p>
+  <b>Beacon data1:</b>
+  <%= @place_information.beacon_data1 %>
+</p>
+
+<p>
+  <b>Beacon data2:</b>
+  <%= @place_information.beacon_data2 %>
+</p>
+
+
+<%= link_to 'Edit', edit_place_information_path(@place_information) %> |
+<%= link_to 'Back', place_informations_path %>

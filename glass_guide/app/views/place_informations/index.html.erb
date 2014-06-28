@@ -1,0 +1,29 @@
+<h1>Listing place_informations</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Beacon data1</th>
+    <th>Beacon data2</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @place_informations.each do |place_information| %>
+  <tr>
+    <td><%= place_information.name %></td>
+    <td><%= place_information.description %></td>
+    <td><%= place_information.beacon_data1 %></td>
+    <td><%= place_information.beacon_data2 %></td>
+    <td><%= link_to 'Show', place_information %></td>
+    <td><%= link_to 'Edit', edit_place_information_path(place_information) %></td>
+    <td><%= link_to 'Destroy', place_information, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Place information', new_place_information_path %>
