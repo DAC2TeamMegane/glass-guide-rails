@@ -32,6 +32,10 @@
     <%= f.number_field :beacon_data2 %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <% if f.object.new_record? %>
+      <%= f.submit "追加",class: "btn btn-default" %>
+    <% else %>
+      <%= f.submit "更新",class: "btn btn-default" %>
+    <% end %>
   </div>
 <% end %>

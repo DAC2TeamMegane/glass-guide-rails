@@ -1,6 +1,6 @@
 <h1>場所情報一覧</h1>
 
-<table>
+<table class="table">
   <tr>
     <th>名称</th>
     <th>説明</th>
@@ -15,17 +15,17 @@
 <% @place_informations.each do |place_information| %>
   <tr>
     <td><%= place_information.name %></td>
-    <td><%= place_information.description %></td>
+    <td><%= truncate(place_information.description, length: 10)%></td>
     <td><%= place_information.url %></td>
     <td><%= place_information.beacon_data1 %></td>
     <td><%= place_information.beacon_data2 %></td>
-    <td><%= link_to '詳細', place_information %></td>
-    <td><%= link_to '編集', edit_place_information_path(place_information) %></td>
-    <td><%= link_to '削除', place_information, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to '詳細', place_information, class: "btn btn-default" %></td>
+    <td><%= link_to '編集', edit_place_information_path(place_information), class: "btn btn-warning" %></td>
+    <td><%= link_to '削除', place_information, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to '場所情報の追加', new_place_information_path %>
+<%= link_to '場所情報の追加', new_place_information_path, class: "btn btn-default" %>
