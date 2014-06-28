@@ -11,11 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140628081426) do
+ActiveRecord::Schema.define(:version => 20140628090808) do
 
   create_table "place_informations", :force => true do |t|
     t.string   "name"
     t.text     "description"
+    t.text     "url"
     t.integer  "beacon_data1"
     t.integer  "beacon_data2"
     t.datetime "created_at",   :null => false

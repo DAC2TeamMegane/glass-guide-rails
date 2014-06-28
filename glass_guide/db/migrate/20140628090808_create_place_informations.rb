@@ -3,6 +3,7 @@ class CreatePlaceInformations < ActiveRecord::Migration
     create_table :place_informations do |t|
       t.string :name
       t.text :description
+      t.text :url
       t.integer :beacon_data1
       t.integer :beacon_data2
 
