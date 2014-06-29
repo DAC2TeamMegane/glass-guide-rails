@@ -5,6 +5,7 @@
     <th>名称</th>
     <th>説明</th>
     <th>URL</th>
+    <th>アイコンURL</th>
     <th>Beaconデータ1</th>
     <th>Beaconデータ2</th>
     <th></th>
@@ -17,6 +18,7 @@
     <td><%= place_information.name %></td>
     <td><%= truncate(place_information.description, length: 10)%></td>
     <td><%= place_information.url %></td>
+    <td><%= place_information.icon_url %></td>
     <td><%= place_information.beacon_data1 %></td>
     <td><%= place_information.beacon_data2 %></td>
     <td><%= link_to '詳細', place_information, class: "btn btn-default" %></td>

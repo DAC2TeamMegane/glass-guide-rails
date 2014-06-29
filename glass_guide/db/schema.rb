@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20140628090808) do
     t.string   "name"
     t.text     "description"
     t.text     "url"
+    t.text     "icon_url"
     t.integer  "beacon_data1"
     t.integer  "beacon_data2"
     t.datetime "created_at",   :null => false

@@ -199,6 +199,7 @@ ja:
       place_information:
         name: 名称
         url: URL
+        icon_url: アイコンURL
         description: 説明
         beacon_data1: データ1
         beacon_data2: データ2
