@@ -201,5 +201,5 @@ ja:
         url: URL
         icon_url: アイコンURL
         description: 説明
-        beacon_data1: データ1
-        beacon_data2: データ2
+        beacon_data1: Major ID
+        beacon_data2: Minor ID

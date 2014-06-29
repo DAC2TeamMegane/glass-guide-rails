@@ -6,8 +6,8 @@
     <th>説明</th>
     <th>URL</th>
     <th>アイコンURL</th>
-    <th>Beaconデータ1</th>
-    <th>Beaconデータ2</th>
+    <th>M</th>
+    <th>m</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,8 +17,8 @@
   <tr>
     <td><%= place_information.name %></td>
     <td><%= truncate(place_information.description, length: 10)%></td>
-    <td><%= place_information.url %></td>
-    <td><%= place_information.icon_url %></td>
+    <td><%= link_to place_information.url, place_information.url  %></td>
+    <td><%= link_to place_information.icon_url, place_information.icon_url %></td>
     <td><%= place_information.beacon_data1 %></td>
     <td><%= place_information.beacon_data2 %></td>
     <td><%= link_to '詳細', place_information, class: "btn btn-default" %></td>
